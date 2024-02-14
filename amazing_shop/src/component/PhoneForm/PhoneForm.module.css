@@ -1,0 +1,26 @@
+.phone_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+input::placeholder {
+  color: var(--white);
+}
+input {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  border-radius: 6px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  transition: border 0.3s ease;
+}
+
+.error {
+  font-size: 10px;
+}
+.button{
+  color: #000;
+}

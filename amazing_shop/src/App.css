@@ -1,38 +1,90 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  scroll-behavior: smooth;
+
+  --ui-color: #339933;
+  --accent-color: #ff32a1;
+  --ui-linear: linear-gradient(262.69deg, #339933 -0.43%, #006300 104.36%);
+
+  --black: #000;
+  --white: #fff;
+  --f1-white: #f1fff1;
+  --8b-grey: #8b8b8b;
+  --a7-grey: #a7a7a7;
+  --ac-grey: #acacac;
+  --c0-grey: #c0c0c0;
+  --6c-grey: #6c6c6c;
+  --92-grey: #929292;
+  --red: red;
+  --blue: rgb(0, 187, 255);
+  --a1-blue: #a1e2eb;
+
+  --transition: 0.3s ease-in;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+.app {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--white);
+  font-weight: 400;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 30px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
   text-align: center;
+  margin-top: 20px;
+}
+h4{
+font-size: 40px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0.03em;
+text-align: left;
+color:#282828;
+
+
+}
+p {
+  color: var(--black);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
   }
 }

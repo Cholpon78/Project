@@ -1,0 +1,14 @@
+.categories_title {
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .categories_title {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .categories_title {
+    margin-top: 30px;
+  }
+}

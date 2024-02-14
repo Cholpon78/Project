@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import HomePage from "./pages/HomePage";
+import CategoriesPage from "./pages/CategoriesPage";
+import SingleItemPage from "./pages/SingleItemPage";
+import ShoppingCardPage from "./pages/ShoppingCardPage";
+import NotFoundPage from "./pages/NotFoundPage";
+import ProductsListPage from "./pages/ProductListPage";
+import SingleCategoryPage from "./pages/SingleCategoryPage";
+import SalePage from "./pages/SalePage";
+import { ToastContainer } from "react-toastify";
+import Header from "./component/Header";
+import Footer from "./component/Footer";
+import { ScrollToTop } from "./UI/ScrollToTop";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="categories" element={<CategoriesPage />} />
+        <Route path="products/all" element={<ProductsListPage />} />
+        <Route path="products/sale" element={<SalePage />} />
+        <Route path="categories/:id" element={<SingleCategoryPage />} />
+        <Route path="products/:id" element={<SingleItemPage />} />
+        <Route path="shoppingcard" element={<ShoppingCardPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+      <Footer />
+      <ToastContainer />
     </div>
   );
 }

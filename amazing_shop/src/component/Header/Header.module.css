@@ -1,0 +1,107 @@
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  cursor: pointer;
+  margin: 0 auto;
+  text-decoration: none;
+  background-color: #fff;
+  /* position: fixed;
+  top: 0;
+  z-index: 1000; */
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.img_cart {
+  width: 48px;
+  height: 48px;
+}
+
+.nav_menu {
+  display: flex;
+  gap: 32px;
+  list-style-type: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-align: right;
+  justify-content: start;
+
+  letter-spacing: 0.5px;
+}
+
+.nav_menu ul {
+  display: flex;
+  gap: 32px;
+  list-style-type: none;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  text-align: left;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  padding-left: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #282828;
+}
+
+.burger_btn {
+  display: none;
+  cursor: pointer;
+}
+.cart_container {
+  position: relative;
+}
+
+.cart_count {
+  position: absolute;
+  top: 7px; 
+  left: -2px; 
+  background-color: green;
+  color: white;
+  width: 26px; 
+  height: 26px; 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px; 
+}
+
+
+/* Добавил медиа-запрос для бургер-меню при уменьшении экрана */
+
+@media screen and (max-width: 768px) {
+  .nav_menu {
+    display: none;
+    flex-direction: column; /* Изменение направления на колонку */
+    position: absolute;
+    top: 128px;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+   
+  }
+.nav_menu ul {
+  flex-direction: column; /* Изменение направления на колонку */
+}
+
+  .nav_menu_open {
+    display: flex;
+  }
+
+  .burger_btn {
+    display: block;
+  }
+}

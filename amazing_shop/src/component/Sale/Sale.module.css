@@ -1,0 +1,29 @@
+.title_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.category_line_container {
+  display: flex;
+  align-items: center;
+}
+.categories_line {
+  height: 1px;
+  width: 70%;
+  border: 1px solid rgb(229, 229, 229);
+  margin: 0;
+}
+.category_btn{
+border: 1px solid #DDDDDD;
+padding: 8px 16px 8px 16px;
+color: gray;
+
+}
+.product_grid{
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}

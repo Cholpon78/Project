@@ -1,0 +1,35 @@
+/* SuccessModal.module.css */
+.modal_container {
+  color: white;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.modal_container button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+}
+.close_icon {
+  fill: white; /* Задаем цвет иконки */
+}
+.modal_text {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 20px;
+  color: white;
+  line-height: 1.5;
+}
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+}
