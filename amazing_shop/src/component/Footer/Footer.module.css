@@ -51,7 +51,7 @@ iframe {
   border-radius: 12px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .contacts {
     gap: 70px;
   }
@@ -61,10 +61,11 @@ iframe {
     padding: 20px 0;
       }
       .phone{
-        font-size: 35px;
+        font-size: 30px;
       }
   .contacts {
     padding: 40px 0;
+       gap: 30px;
   }
   .title {
     margin-bottom: 0;
@@ -78,5 +79,12 @@ iframe {
   display: flex;
   flex-direction: column;
 gap: 10px;
+}
+}
+@media (max-width: 360px) {
+.contacts{
+  display: flex;
+  flex-direction: column;
+gap: 5px;
 }
 }

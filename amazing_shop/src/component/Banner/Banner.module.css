@@ -3,20 +3,20 @@
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: bottom;
+  margin: auto;
   min-height: 600px;
   max-width: 1440px;
-  /* margin: auto; */
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 40px;
   color: var(--white);
   font-weight: 700;
   gap: 60px;
 }
 
 .title {
-  margin-top: 80px;
   font-size: 96px;
+  padding-top: 80px;
 }
 .title span {
   display: block;
@@ -29,29 +29,18 @@
 }
 
 @media (max-width: 1000px) {
-  .sale {
-    min-height: 476px;
-    max-width: 1000px;
-  }
-  .title {
-    margin-top: 60px;
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 110%;
-    letter-spacing: 0%;
-    text-align: left;
-  }
-  .title span {
-    display: block;
-    font-size: 75px;
-  }
+.banner{
+  min-height: 470px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 }
 @media (max-width: 768px) {
-   .sale {
- padding-top: 60px;
-    min-height: 634px;
-    max-width: 768px;
-  }
+.banner{
+  min-height: 630px;
+  max-width: 768px;
+}
   .title {
     font-size: 60px;
   }
@@ -60,20 +49,13 @@
   }
 }
 @media (max-width: 480px) {
-  .sale {
-    margin-top: 10px;
-  }
+
 }
-/* @media (max-width: 360px) {
-  .sale {
- padding-top: 50px;
-    min-height: 600px;
-    max-width: 360px;
-  }
+@media (max-width: 360px) {
     .title {
     font-size: 50px;
   }
   .title span {
     font-size: 50px;
   }
-} */
+}

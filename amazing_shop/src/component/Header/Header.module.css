@@ -78,13 +78,15 @@ a {
   font-size: 12px; 
 }
 
+@media screen and (max-width: 1000px) {
 
-/* Добавил медиа-запрос для бургер-меню при уменьшении экрана */
+
+}
 
 @media screen and (max-width: 768px) {
   .nav_menu {
     display: none;
-    flex-direction: column; /* Изменение направления на колонку */
+    flex-direction: column; 
     position: absolute;
     top: 128px;
     right: 0;
@@ -94,7 +96,7 @@ a {
    
   }
 .nav_menu ul {
-  flex-direction: column; /* Изменение направления на колонку */
+  flex-direction: column; 
 }
 
   .nav_menu_open {
@@ -104,4 +106,13 @@ a {
   .burger_btn {
     display: block;
   }
+}
+@media screen and (max-width: 480px) {
+
+
+}
+
+@media screen and (max-width: 360px) {
+
+
 }

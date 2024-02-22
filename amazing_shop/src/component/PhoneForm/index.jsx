@@ -28,6 +28,7 @@ export default function PhoneForm({
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const onSubmit = (data) => {
+    console.log(data);
     if (nameInput === "order") {
       dispatch(fetchOrder(data.phone, data.email));
       dispatch(cleanCart());
@@ -89,9 +90,7 @@ export default function PhoneForm({
             content="Tel_number"
             validation={phoneInputRef}
           />
-          <p
-            className={`${s.error} ${s[errors.phone ? "active" : ""]}`}
-          >
+          <p className={`${s.error} ${s[errors.phone ? "active" : ""]}`}>
             {errors?.phone?.message}
           </p>
         </div>
@@ -103,9 +102,7 @@ export default function PhoneForm({
             content="Email"
             validation={emailInputRef}
           />
-          <p
-            className={`${s.error} ${s[errors.email ? "active" : ""]}`}
-          >
+          <p className={`${s.error} ${s[errors.email ? "active" : ""]}`}>
             {errors?.email?.message}
           </p>
         </div>

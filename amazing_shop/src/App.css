@@ -24,7 +24,6 @@
 
   --transition: 0.3s ease-in;
 }
-
 ul,
 ol,
 li {
@@ -40,15 +39,15 @@ a {
   width: 100%;
   margin: 0 auto;
   background-color: var(--white);
+  font-family: Montserrat;
   font-weight: 400;
 }
 .container {
-  margin: 0 auto;
   max-width: 1440px;
   width: 100%;
   padding: 0 30px;
+  margin: 0 auto;
 }
-
 h1 {
   font-size: 40px;
   font-weight: 700;

@@ -20,7 +20,7 @@ const SuccessModal = ({ isOpen, onClose, message }) => {
     <ReactModal isOpen={isOpen} onRequestClose={onClose} style={modalStyles}>
      <div className="container"> 
       <div className={s.modal_container}>
-        <h3>Congratulations!</h3>
+        <h5>Congratulations!</h5>
         <p className={s.modal_text}>{message}</p>
         <button onClick={onClose}>
           <img src={close} alt="Close" className={s.close_icon} />

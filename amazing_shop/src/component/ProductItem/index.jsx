@@ -25,7 +25,7 @@ export default function ProductItem({
   function handleSingleProduct(id) {
     dispatch(getProductId(id));
     localStorage.setItem("ProductId", JSON.stringify(id));
-    navigate(`/products/${id}`); // Fixed the redirection by correctly interpolating the id
+    navigate(`/products/${id}`); 
   }
 
   const addProduct = (e) => {

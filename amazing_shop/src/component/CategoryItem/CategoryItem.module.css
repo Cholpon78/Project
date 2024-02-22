@@ -17,7 +17,26 @@
   border-radius: 10px;
 }
 @media (max-width: 1000px) {
-	.image_wrapper {
+h3{
+    text-align: center;
+}
+.image_wrapper img {
+}
+}
+@media (max-width: 760px) {
+h3{
+    text-align: center;
+}
+.image_wrapper img {
+}
+}
+@media (max-width: 480px) {
+.image_wrapper img{
+ 
+}
+}
+@media (max-width: 380px) {
 
-  }
+.image_wrapper img{
+}
 }

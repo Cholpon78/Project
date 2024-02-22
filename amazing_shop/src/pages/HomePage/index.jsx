@@ -11,7 +11,7 @@ export default function HomePage() {
       <Banner/>
       <CategoriesList visibleCount={4} />
       <Discount />
-      <Sale />
+      {/* <Sale /> */}
     </div>
   );
 }

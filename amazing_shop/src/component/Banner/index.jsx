@@ -10,7 +10,7 @@ export default function Banner() {
     navigate("/");
   };
   return (
-    <div className="container">
+    <div >
       <div className={s.banner}>
         <h1 className={s.title}>
           Amazing Discounts
